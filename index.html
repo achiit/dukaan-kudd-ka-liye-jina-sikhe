@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SKYQUEEN – Create. Connect. Grow.</title>
+<meta name="description" content="SKYQUEEN by Prabhjot Kaur Mehra – professional website development, digital services and premium eBooks.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07050d;--card:#120d20;--line:#2a1f45;--tx:#f5f1ff;--mut:#a79cc4;--gold:#e6b94d;--pur:#7b2ff7;--pur2:#4b1d9c;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Poppins,system-ui,sans-serif;line-height:1.65}
+h1,h2,h3,.logo{font-family:'Playfair Display',Georgia,serif;margin:0 0 .5em}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,5,13,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:12px}
+.logo{font-size:1.5rem;font-weight:700;letter-spacing:.12em;margin:0;background:linear-gradient(90deg,var(--gold),#fff3c4,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo span{font-size:.9em}
+.links{display:flex;gap:18px;flex-wrap:wrap;font-size:.86rem}
+.links a{color:var(--mut);transition:.2s}.links a:hover,.links a.on{color:var(--gold)}
+@media(max-width:720px){nav{flex-direction:column}.links{justify-content:center;gap:12px}}
+main{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:56px 0;animation:fade .6s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero{text-align:center;padding:90px 0 70px;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(123,47,247,.35),transparent 60%);z-index:-1}
+.hero h1{font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.15}
+.gold{color:var(--gold)}
+.sub{color:var(--mut);max-width:640px;margin:0 auto 28px}
+.btn{display:inline-block;padding:13px 28px;border-radius:40px;font-weight:500;border:0;cursor:pointer;font:inherit;font-weight:500;transition:.25s}
+.b1{background:linear-gradient(135deg,var(--gold),#b8872b);color:#1a1200;box-shadow:0 0 24px rgba(230,185,77,.3)}
+.b2{background:transparent;border:1px solid var(--pur);color:var(--tx)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 28px rgba(123,47,247,.55)}
+.wa{background:#25d366;color:#04210f}
+.row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.tag{color:var(--gold);letter-spacing:.3em;font-size:.75rem;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,3.5vw,2.3rem)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:linear-gradient(160deg,var(--card),#0c0817);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.3s}
+.card:hover{border-color:var(--gold);box-shadow:0 0 30px rgba(123,47,247,.25);transform:translateY(-4px)}
+.card .ic{font-size:1.8rem}.card p{color:var(--mut);font-size:.92rem;margin:0}
+.cover{aspect-ratio:3/4;border-radius:12px;display:flex;flex-direction:column;justify-content:flex-end;padding:16px;margin-bottom:14px;border:1px solid rgba(230,185,77,.4);background:linear-gradient(150deg,var(--pur2),#0b0614 75%);position:relative;overflow:hidden}
+.cover::after{content:"SKYQUEEN";position:absolute;top:12px;left:14px;font-size:.62rem;letter-spacing:.3em;color:var(--gold)}
+.cover b{font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.2}
+.price{color:var(--gold);font-weight:600;font-size:1.1rem}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{padding:6px 14px;border-radius:30px;border:1px solid var(--line);background:none;color:var(--mut);cursor:pointer;font:inherit;font-size:.82rem}
+.chip.on{background:var(--pur);color:#fff;border-color:var(--pur)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+form{display:grid;gap:12px}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0c0817;color:var(--tx);font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:36px 20px;text-align:center;color:var(--mut);font-size:.85rem}
+footer .links{justify-content:center;margin:14px 0}
+.soc{display:flex;gap:12px;justify-content:center;margin:12px 0}
+.soc a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:.25s}
+.soc a:hover{border-color:var(--gold);box-shadow:0 0 18px rgba(230,185,77,.4)}
+.soc svg{width:20px;height:20px;fill:var(--gold)}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 0 22px rgba(37,211,102,.5)}
+.fab svg{width:30px;height:30px;fill:#fff}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;place-items:center;z-index:50;padding:20px}
+.modal.on{display:grid}.modal .card{max-width:420px;width:100%}
+.prose{max-width:760px}.prose p,.prose li{color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:.88rem}td,th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+.note{font-size:.78rem;color:var(--mut)}
+</style></head><body>
+<header><nav><a href="#home" class="logo">♛ SKY<span>QUEEN</span></a><div class="links" id="nav"></div></nav></header>
+<main id="app"></main>
+<footer>
+<div class="logo" style="display:inline-block">♛ SKYQUEEN</div>
+<div class="gold">CREATE. CONNECT. GROW.</div>
+<div class="soc" id="soc"></div>
+<div class="links"><a href="#privacy">Privacy Policy</a><a href="#terms">Terms and Conditions</a><a href="#refund">Refund and Digital Product Policy</a><a href="#admin">Admin</a></div>
+© 2026 SKYQUEEN · Prabhjot Kaur Mehra · +91 8872702748
+</footer>
+<a class="fab" id="fab" aria-label="WhatsApp" target="_blank" rel="noopener"></a>
+<div class="modal" id="modal"><div class="card" id="mbox"></div></div>
+<script>
+const PHONE="918872702748",IG="https://www.instagram.com/skyqueen_9780?xtok=bjNuZzZlaHE4azM4",FB="https://www.facebook.com/share/1DfKFQSzD9/";
+const wa=t=>`https://wa.me/${PHONE}?text=${encodeURIComponent(t)}`;
+const ICON={ig:'<svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.5 6a1 1 0 110 2 1 1 0 010-2z"/></svg>',
+fb:'<svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V14h2.7v8h3.1z"/></svg>',
+wa:'<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18.2c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.200zm4.5-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 01-3.300-2.900c-.2-.4.2-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2.100 3.200 5 4.400 1.900.8 2.600.9 3.600.7.600-.1 1.500-.6 1.700-1.200.2-.6.200-1.100.2-1.200-.1-.1-.3-.2-.5-.3z"/></svg>'};
+document.getElementById('soc').innerHTML=`<a href="${IG}" target="_blank" rel="noopener" aria-label="Instagram">${ICON.ig}</a><a href="${FB}" target="_blank" rel="noopener" aria-label="Facebook">${ICON.fb}</a><a href="${wa('Hello SKYQUEEN!')}" target="_blank" rel="noopener" aria-label="WhatsApp">${ICON.wa}</a>`;
+const fab=document.getElementById('fab');fab.href=wa('Hello SKYQUEEN, I have an inquiry.');fab.innerHTML=ICON.wa;
+
+const CATS=["Business and Entrepreneurship","Digital Marketing","Self-Growth and Motivation","Online Business","Skills and Learning","Personal Development"];
+const DEF=[
+{id:"p1",t:"The Founder’s Blueprint",c:CATS[0],p:499,d:"A step-by-step guide to launching and scaling a profitable business from zero."},
+{id:"p2",t:"Social Media Growth Playbook",c:CATS[1],p:399,d:"Practical strategies to build an audience and turn followers into customers."},
+{id:"p3",t:"Rise & Shine: Mindset Mastery",c:CATS[2],p:299,d:"Daily habits and mental frameworks to build unstoppable confidence."},
+{id:"p4",t:"Start Your Online Business",c:CATS[3],p:599,d:"Everything you need to set up, market and run a business on the internet."},
+{id:"p5",t:"Learn Any Skill Faster",c:CATS[4],p:249,d:"Proven learning techniques to master new digital skills in less time."},
+{id:"p6",t:"Design Your Best Self",c:CATS[5],p:349,d:"A personal development roadmap for goals, discipline and lasting growth."}];
+let P;try{P=JSON.parse(localStorage.getItem('sq_p')||'null')}catch(e){}P=P||DEF;
+const save=()=>{try{localStorage.setItem('sq_p',JSON.stringify(P))}catch(e){}};
+const cover=p=>`<div class="cover" style="background:linear-gradient(150deg,hsl(${(p.id.length*47+p.t.length*13)%60+255} 70% 30%),#0b0614 75%)"><b>${p.t}</b><small class="gold">${p.c}</small></div>`;
+const card=p=>`<a class="card" href="#book-${p.id}">${cover(p)}<h3 style="font-size:1.05rem">${p.t}</h3><div class="price">₹${p.p}</div></a>`;
+
+const SERV=[["💼","Business Website Development","Powerful sites that build trust and bring in clients."],["🎨","Personal Portfolio Websites","Showcase your work with an elegant personal brand."],["🛒","E-commerce Websites","Online stores built to sell, with secure checkout."],["🚀","Landing Page Design","High-converting pages for campaigns and launches."],["👑","Professional Brand Websites","Premium identity-driven sites for growing brands."],["🏪","Small Business Websites","Affordable, fast sites for local businesses."],["🔧","Website Redesign and Customization","Modernise and upgrade your existing website."]];
+const WHY=[["🛡️","Professional Website Solutions"],["✨","Creative Digital Designs"],["📚","Valuable Digital Resources"],["🤝","Customer-Focused Service"],["💎","Affordable Packages"],["🎧","Dedicated Support"]];
+const servCards=()=>SERV.map(s=>`<div class="card"><div class="ic">${s[0]}</div><h3 style="font-size:1.1rem">${s[1]}</h3><p>${s[2]}</p></div>`).join('');
+const getBtn=`<a class="btn b1" target="_blank" rel="noopener" href="${wa('Hello SKYQUEEN, I want to get a website.')}">Get Your Website</a>`;
+const head=(t,s)=>`<div class="tag">${s}</div><h2>${t}</h2>`;
+const policy=(t,items)=>`<section class="prose">${head(t,'SKYQUEEN')}${items.map(i=>`<p>${i}</p>`).join('')}<p class="note">Last updated: November 2026. Please have these policies reviewed to suit your legal requirements before launch.</p></section>`;
+
+const R={
+home:()=>`<section class="hero"><div class="tag">Create. Connect. Grow.</div><h1>WELCOME TO <span class="gold">SKYQUEEN</span> – TURN YOUR DIGITAL DREAMS INTO REALITY.</h1><p class="sub">Your Digital Growth Partner. We create professional websites and provide valuable digital eBooks to help individuals and businesses grow online.</p><div class="row"><a class="btn b1" href="#services">Explore Our Services</a><a class="btn b2" href="#store">Shop eBooks</a></div></section>
+<section>${head('Our Services','Website Development')}<div class="grid">${servCards().split('</div><div class="card">').slice(0,3).join('</div><div class="card">')}</div><p><a class="gold" href="#services">View all services →</a></p></section>
+<section>${head('Featured eBooks','Digital Store')}<div class="grid">${P.slice(0,4).map(card).join('')}</div></section>
+<section>${head('Why Choose SKYQUEEN?','Our Promise')}<div class="grid">${WHY.map(w=>`<div class="card"><div class="ic">${w[0]}</div><h3 style="font-size:1.05rem;margin:0">${w[1]}</h3></div>`).join('')}</div></section>
+<section style="text-align:center">${head('Ready to grow online?','Let’s talk')}<a class="btn wa" target="_blank" rel="noopener" href="${wa('Hello SKYQUEEN, I want to know more.')}">Chat on WhatsApp</a></section>`,
+about:()=>`<section class="two"><div class="card" style="text-align:center;padding:50px 20px"><div style="font-size:4rem">♛</div><h3 class="gold">Prabhjot Kaur Mehra</h3><p>Owner &amp; Founder, SKYQUEEN</p></div><div>${head('About Me','About Us')}<p>Hello! I’m Prabhjot Kaur Mehra, the founder of SKYQUEEN. I am passionate about digital creativity, website development, and helping people explore opportunities in the digital world.</p><p>Through SKYQUEEN, my mission is to provide professional website creation services and valuable eBooks that help individuals, entrepreneurs, and businesses establish and grow their online presence.</p><p>My vision is to build a trusted digital brand that inspires creativity, learning, and success.</p></div></section><section>${head('Why Choose SKYQUEEN?','Our Promise')}<div class="grid">${WHY.map(w=>`<div class="card"><div class="ic">${w[0]}</div><h3 style="font-size:1.05rem;margin:0">${w[1]}</h3></div>`).join('')}</div></section>`,
+services:()=>`<section>${head('Website Development Services','Our Services')}<div class="grid">${servCards()}</div><p style="margin-top:28px">${getBtn}</p></section>`,
+portfolio:()=>`<section>${head('Website Portfolio','Our Work')}<p class="sub" style="margin-left:0">A showcase of completed website projects. Replace these placeholders with your real projects.</p><div class="grid">${[1,2,3].map(i=>`<div class="card"><div class="cover" style="aspect-ratio:16/10;background:linear-gradient(135deg,#2a1066,#07050d)"><b>Project ${i}</b><small class="gold">Your completed website goes here</small></div><p>Add a screenshot, client name and live link.</p></div>`).join('')}</div><p style="margin-top:28px">${getBtn}</p></section>`,
+store:()=>{const f=sessionStorage.getItem('f')||'All';return `<section>${head('Digital eBook Store','Shop eBooks')}<div class="chips">${['All',...CATS].map(c=>`<button class="chip ${c==f?'on':''}" onclick="sessionStorage.setItem('f','${c}');go()">${c}</button>`).join('')}</div><div class="grid">${P.filter(p=>f=='All'||p.c==f).map(card).join('')||'<p>No eBooks in this category yet.</p>'}</div></section>`},
+contact:()=>`<section class="two"><div>${head('Contact Us','Get in touch')}<p><b class="gold">SKYQUEEN – Prabhjot Kaur Mehra</b></p><p>📞 Phone: <a href="tel:+918872702748">+91 8872702748</a></p><p>📸 <a href="${IG}" target="_blank" rel="noopener">Official Instagram</a></p><p>👍 <a href="${FB}" target="_blank" rel="noopener">Official Facebook page</a></p><a class="btn wa" target="_blank" rel="noopener" href="${wa('Hello SKYQUEEN, I have an inquiry.')}">WhatsApp Us Now</a></div>
+<form class="card" onsubmit="sendForm(event)"><input name="n" placeholder="Full Name" required><input name="e" type="email" placeholder="Email Address" required><input name="p" type="tel" placeholder="Phone Number" required><select name="s" required><option value="">Service Required</option>${SERV.map(s=>`<option>${s[1]}</option>`).join('')}<option>eBook Purchase Help</option></select><textarea name="m" rows="4" placeholder="Message" required></textarea><button class="btn b1">Send Message</button></form></section>`,
+privacy:()=>policy('Privacy Policy',["SKYQUEEN collects only the information you provide (name, email, phone, message, order details) to respond to inquiries and deliver purchases.","We never sell your personal data. Payment details are handled by our secure payment gateway and are not stored by SKYQUEEN.","We may use basic analytics and cookies to improve the website. You can contact us on +91 8872702748 to request access to or deletion of your data."]),
+terms:()=>policy('Terms and Conditions',["By using this website you agree to these terms. All content, designs and eBooks are the property of SKYQUEEN and may not be copied, resold or redistributed without permission.","Website development projects are delivered according to the scope, price and timeline agreed with the client in writing or via WhatsApp.","SKYQUEEN may update prices, products and policies at any time. Use of the website is governed by the laws of India."]),
+refund:()=>policy('Refund and Digital Product Policy',["eBooks are digital products delivered instantly after successful payment. Because they cannot be returned, all eBook sales are generally final.","If you receive a corrupted or wrong file, or were charged but did not receive your eBook, contact us within 7 days and we will resend it or issue a refund.","For website services, advance payments are non-refundable once work has begun; any exceptions are agreed in writing."])
+};
+function book(id){const p=P.find(x=>x.id==id);if(!p)return R.store();return `<section class="two"><div style="max-width:320px;width:100%">${cover(p)}</div><div><div class="tag">${p.c}</div><h2>${p.t}</h2><p style="color:var(--mut)">${p.d}</p><ul class="note" style="padding-left:18px"><li>Instant digital delivery (PDF)</li><li>Secure online payment</li><li>Lifetime access to your download</li></ul><p class="price" style="font-size:1.6rem">₹${p.p}</p><button class="btn b1" onclick="buy('${p.id}')">Buy Now</button> <a class="btn b2" href="#store">← Back to store</a></div></section>`}
+function admin(){const ok=sessionStorage.getItem('adm');if(!ok)return `<section class="prose">${head('Admin Dashboard','Owner access')}<form class="card" onsubmit="event.preventDefault();if(this.k.value==='skyqueen123'){sessionStorage.setItem('adm',1);go()}else alert('Wrong password')"><input name="k" type="password" placeholder="Admin password" required><button class="btn b1">Login</button><p class="note">Demo password: skyqueen123 – change this in the code. Real admin security needs a backend.</p></form></section>`;
+return `<section>${head('Admin Dashboard','Manage eBooks')}<form class="card" onsubmit="addP(event)" style="margin-bottom:24px"><input name="t" placeholder="eBook title" required><select name="c">${CATS.map(c=>`<option>${c}</option>`).join('')}</select><input name="p" type="number" min="1" placeholder="Price (₹)" required><textarea name="d" rows="3" placeholder="Description" required></textarea><button class="btn b1">Add eBook</button></form><div class="card" style="overflow-x:auto"><table><tr><th>Title</th><th>Price ₹</th><th></th></tr>${P.map(p=>`<tr><td>${p.t}</td><td><input type="number" value="${p.p}" style="width:90px" onchange="upd('${p.id}',this.value)"></td><td><button class="chip" onclick="del('${p.id}')">Delete</button></td></tr>`).join('')}</table></div><p class="note">Demo mode: changes are saved only in this browser. To sell for real, connect a payment gateway (Razorpay/Stripe) and a backend with file storage for automatic email delivery.</p><button class="chip" onclick="sessionStorage.removeItem('adm');go()">Logout</button></section>`}
+function addP(e){e.preventDefault();const f=e.target;P.push({id:'p'+Date.now(),t:f.t.value,c:f.c.value,p:+f.p.value,d:f.d.value});save();go()}
+function upd(id,v){P.find(x=>x.id==id).p=+v;save()}
+function del(id){if(confirm('Delete this eBook?')){P=P.filter(x=>x.id!=id);save();go()}}
+function sendForm(e){e.preventDefault();const f=e.target;window.open(wa(`New inquiry from SKYQUEEN website\nName: ${f.n.value}\nEmail: ${f.e.value}\nPhone: ${f.p.value}\nService: ${f.s.value}\nMessage: ${f.m.value}`),'_blank');f.reset()}
+function buy(id){const p=P.find(x=>x.id==id),m=document.getElementById('modal');document.getElementById('mbox').innerHTML=`<h3>Checkout</h3><p>${p.t} – <b class="price">₹${p.p}</b></p><form onsubmit="event.preventDefault();pay('${id}',this)"><input name="n" placeholder="Your name" required><input name="e" type="email" placeholder="Email for eBook delivery" required><button class="btn b1">Pay ₹${p.p}</button><button type="button" class="btn b2" onclick="closeM()">Cancel</button></form><p class="note">Demo checkout. Live payments need a gateway (Razorpay/Stripe) connected.</p>`;m.classList.add('on')}
+function pay(id,f){const p=P.find(x=>x.id==id);document.getElementById('mbox').innerHTML=`<h3 class="gold">Thank you, ${f.n.value}! 🎉</h3><p>Order for <b>${p.t}</b> received. In the live version, your eBook is emailed to ${f.e.value} automatically after payment.</p><a class="btn wa" target="_blank" rel="noopener" href="${wa('Hello SKYQUEEN, I ordered "'+p.t+'" (₹'+p.p+').')}">Confirm on WhatsApp</a> <button class="btn b2" onclick="closeM()">Close</button>`}
+function closeM(){document.getElementById('modal').classList.remove('on')}
+document.getElementById('modal').onclick=e=>{if(e.target.id=='modal')closeM()};
+const NAV=[["home","Home"],["about","About Us"],["services","Our Services"],["portfolio","Website Portfolio"],["store","eBook Store"],["contact","Contact Us"]];
+function go(){let h=(location.hash||'#home').slice(1),v;
+if(h.startsWith('book-'))v=book(h.slice(5));else if(h=='admin')v=admin();else{if(!R[h])h='home';v=R[h]()}
+document.getElementById('app').innerHTML=v;
+document.getElementById('nav').innerHTML=NAV.map(n=>`<a href="#${n[0]}" class="${n[0]==h?'on':''}">${n[1]}</a>`).join('');
+document.title=(h=='home'?'SKYQUEEN – Create. Connect. Grow.':'SKYQUEEN | '+h);window.scrollTo(0,0)}
+addEventListener('hashchange',go);go();
+</script></body></html>
